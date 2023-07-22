@@ -10,9 +10,9 @@ spring:
   application:
     name: SWARM-Back
   datasource:
-    password: password
-    username: user
-    url: jdbc:postgresql://localhost:5432/swarm
+    password: ${BDD_USER_PASSWORD:password}
+    username: ${BDD_USER:user}
+    url: ${BDD_URL:jdbc:postgresql://localhost:5432/swarm}
 
 management:
   endpoints:
