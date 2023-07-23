@@ -1,7 +1,8 @@
 FROM openjdk:17-alpine
 
 WORKDIR /app
-ADD back-ws/target/Application-server-ws.jar app.jar
+ADD /back-ws/target/Application-server-ws.jar app.jar
+
 
 # Define environment variables
 ENV BDD_USER_PASSWORD=password \
